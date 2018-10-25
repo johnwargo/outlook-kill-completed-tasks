@@ -4,11 +4,11 @@ My wife's computer died, and as I transferred her data to her new system, I noti
 
 Well, I tried to select all, then delete them, but Outlook couldn't handle that. Next I tried deleting them in batches, but since several of the actual tasks were recurring tasks, that wouldn't work either as I would have to click the Outlook confirmation dialog's **Yes** button 348,000 times to delete them.
 
-Fortunately, I knew how to maniuplate Outlook items programatically, so this simple utility app was born. The code finds the tasks folder in Outlook, then deletes all completed tasks. I imagine it will run for days on my wife's new system.
+Fortunately, I knew how to maniuplate Outlook items programatically, so this simple Delphi utility app was born. The code finds the tasks folder in Outlook, then deletes all completed tasks. You'll need a copy of [Delphi](https://www.embarcadero.com/products/delphi) to compile this code. You may also be able to compile it using the open source [Lazarus](https://www.lazarus-ide.org/) IDE, but I haven't tried.
 
-I didn't build in a way to cancel processing, so once it starts, it will run until it completes or until you kill the task.
+I imagine it will run for days on my wife's new system. I didn't build in a way to cancel processing, so once it starts, it will run until it completes or until you kill the task.
 
-The source code, as is, doesn't actually delete anything. I've commented out the line that does it, it looks like this:
+The source code, as is, doesn't actually delete anything. I've commented out the line that does it, it currently looks like this:
 
 ``` Pascal
 // Uncomment the following line when you're ready to delete entries
@@ -22,7 +22,7 @@ With that commented out, you can run the program on your system and see what it 
 oiItem.Delete;
 ```
 
-Build and execute the program to get to work.
+Build and execute the program to get to work deleting completed tasks.
 
 ---
 
