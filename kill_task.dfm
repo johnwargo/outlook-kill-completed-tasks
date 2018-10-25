@@ -1,6 +1,6 @@
 object frmMain: TfrmMain
-  Left = 0
-  Top = 0
+  Left = 100
+  Top = 100
   Caption = 'Kill Outlook Tasks'
   ClientHeight = 461
   ClientWidth = 852
@@ -11,6 +11,7 @@ object frmMain: TfrmMain
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
   OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
