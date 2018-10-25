@@ -22,9 +22,6 @@ object frmMain: TfrmMain
     Panels = <>
     SimplePanel = True
     SimpleText = 'Copyright 2018 John M, Wargo'
-    ExplicitLeft = 432
-    ExplicitTop = 240
-    ExplicitWidth = 0
   end
   object output: TMemo
     Left = 0

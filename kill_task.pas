@@ -106,6 +106,8 @@ begin
           output.Lines.add(msgText);
           // Uncomment the following line when you're ready to delete entries
           // oiItem.Delete;
+          //Let the app process messages before kicking off the next one
+          Application.ProcessMessages();
         end;
       end;
       output.Lines.add('All done!');
