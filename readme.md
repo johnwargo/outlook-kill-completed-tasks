@@ -2,7 +2,7 @@
 
 My wife's computer died, and as I transferred her data to her new system, I noticed that Microsoft Outlook reported that she had 348,000 completed tasks in her tasks folder. Now my wife isn't a prolific task completer, so I knew something else was wrong here. As I looked through her task list, I noticed that many of them were duplicates as she only manages something like 10 tasks. Sigh.
 
-Well, I tried to select all, then delete them, but Outlook couldn't handle that. Next I tried deleting them in batches, but since several of the actual tasks were recurring tasks, that wouldn't work either as I would have to click `yes` 348,000 times to delete them.
+Well, I tried to select all, then delete them, but Outlook couldn't handle that. Next I tried deleting them in batches, but since several of the actual tasks were recurring tasks, that wouldn't work either as I would have to click the Outlook confirmation dialog's **Yes** button 348,000 times to delete them.
 
 Fortunately, I knew how to maniuplate Outlook items programatically, so this simple utility app was born. The code finds the tasks folder in Outlook, then deletes all completed tasks. I imagine it will run for days on my wife's new system.
 
