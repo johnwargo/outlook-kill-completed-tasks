@@ -102,7 +102,9 @@ begin
         // Is the task completed?
         if taskStatus then
         begin
-          msgText := Format('Deleting #%d: %s', [i, oiItem.subject]);
+          // format the item number with commas.
+          msgText := Format('Deleting #%s: %s',
+            [FormatFloat('###,###,###,###', i), oiItem.subject]);
           output.Lines.add(msgText);
           // Uncomment the following line when you're ready to delete entries
           // oiItem.Delete;

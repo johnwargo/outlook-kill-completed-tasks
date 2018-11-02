@@ -9,6 +9,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  Application.Title := 'Outlook Task Killer';
   Application.CreateForm(TfrmMain, frmMain);
   Application.Run;
 end.
